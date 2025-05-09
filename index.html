@@ -581,6 +581,215 @@ body {
         justify-content: center;
         flex-wrap: wrap;
     }
+
+    /* =====================
+   OUR VISION SECTION
+===================== */
+.vision-section {
+    background-color: #fff;
+    padding: 80px 0 0;
+    width: 100%;
+}
+
+.vision-description {
+    max-width: 1080px;
+    margin: 0 auto 40px;
+    text-align: center;
+    font-size: 22px;
+    line-height: 1.6;
+    color: #333;
+    font-weight: 500;
+}
+
+.vision-image-container {
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto 60px;
+    overflow: hidden;
+}
+
+.vision-image {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 8px;
+}
+
+.vision-content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    margin-bottom: 60px;
+}
+
+.vision-text {
+    flex: 1;
+    min-width: 300px;
+}
+
+.vision-subtitle {
+    font-size: 34px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: #222;
+}
+
+.vision-text p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.vision-features {
+    padding-left: 20px;
+    margin-top: 20px;
+}
+
+.vision-features li {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.vision-diagram {
+    flex: 1;
+    min-width: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.diagram-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.vision-full-image {
+    width: 100%;
+    overflow: hidden;
+    margin-bottom: 0;
+}
+
+.panorama-image {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* =====================
+   PROJECT GALLERY SECTION
+===================== */
+.gallery-section {
+    background-color: #f9f9f9;
+    padding: 80px 0;
+    width: 100%;
+}
+
+.gallery-description {
+    max-width: 1000px;
+    margin: 0 auto 50px;
+    text-align: center;
+    font-size: 20px;
+    line-height: 1.6;
+    color: #333;
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    margin-top: 40px;
+}
+
+.gallery-item {
+    background-color: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.gallery-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
+}
+
+.gallery-image {
+    width: 100%;
+    height: 220px;
+    overflow: hidden;
+}
+
+.gallery-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.gallery-item:hover .gallery-img {
+    transform: scale(1.05);
+}
+
+.gallery-caption {
+    padding: 20px;
+}
+
+.gallery-caption h3 {
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 10px;
+    color: #222;
+}
+
+.gallery-caption p {
+    font-size: 16px;
+    line-height: 1.5;
+    color: #555;
+}
+
+/* Responsive adjustments */
+@media (max-width: 992px) {
+    .vision-content {
+        flex-direction: column;
+    }
+    
+    .vision-diagram {
+        order: -1;
+        margin-bottom: 30px;
+    }
+    
+    .gallery-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .vision-section, .gallery-section {
+        padding: 60px 20px;
+    }
+    
+    .vision-subtitle {
+        font-size: 28px;
+    }
+    
+    .vision-description, .gallery-description {
+        font-size: 18px;
+    }
+    
+    .gallery-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    
+    .gallery-image {
+        height: 200px;
+    }
+}
 }
     </style>
 </head>
@@ -678,7 +887,18 @@ body {
         </div>
     </section>
 
+    <section class="attractions-section">
+        <div class="container">
+            <img src="img/vision.png" alt="World Class Attractions at The FEZ Manteca - Premium Shopping, Diverse Dining, Family Entertainment, Sports Facilities, Live Entertainment, and Community Spaces with 120+ acres, 50+ retail spaces, 25+ dining options, and 10+ entertainment venues" class="attractions-image">
+        </div>
+    </section>
+<!-- PROJECT GALLERY Section -->
 
+<section class="attractions-section">
+    <div class="container">
+        <img src="img/project.png" alt="World Class Attractions at The FEZ Manteca - Premium Shopping, Diverse Dining, Family Entertainment, Sports Facilities, Live Entertainment, and Community Spaces with 120+ acres, 50+ retail spaces, 25+ dining options, and 10+ entertainment venues" class="attractions-image">
+    </div>
+</section>
 
     <section class="investment-section">
         <div class="container">
