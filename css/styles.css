@@ -1,0 +1,133 @@
+/* Contact Us Section */
+#contact-us {
+    background-color: #b93d3d; /* The exact background color from Canva */
+    color: white;
+    padding: 3rem 0;
+    text-align: center;
+}
+
+.section-title {
+    font-size: 4rem;
+    font-weight: bold;
+    margin-bottom: 2rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.2);
+}
+
+.contact-intro {
+    font-size: 1.4rem;
+    max-width: 900px;
+    margin: 0 auto 3rem;
+    line-height: 1.5;
+}
+
+.contact-intro a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.contact-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 2rem;
+}
+
+/* Social Connect Section */
+.social-connect {
+    flex: 1;
+    min-width: 300px;
+    text-align: left;
+}
+
+.social-connect h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.social-icons {
+    display: flex;
+    gap: 1rem;
+}
+
+.social-icons a {
+    color: white;
+    font-size: 2.5rem;
+    transition: opacity 0.3s;
+    background-color: rgba(255, 255, 255, 0.1);
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+}
+
+.social-icons a:hover {
+    opacity: 0.8;
+}
+
+/* Contact Info Section */
+.contact-info {
+    flex: 1;
+    min-width: 300px;
+    text-align: left;
+    display: grid;
+    gap: 1.5rem;
+}
+
+.info-item {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    align-items: flex-start;
+}
+
+.info-label {
+    font-size: 1.2rem;
+    opacity: 0.9;
+}
+
+.info-value {
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.info-value a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .section-title {
+        font-size: 3rem;
+    }
+    
+    .contact-intro {
+        font-size: 1.2rem;
+    }
+    
+    .contact-content {
+        flex-direction: column;
+    }
+    
+    .info-item {
+        grid-template-columns: 1fr;
+    }
+    
+    .social-connect, .contact-info {
+        text-align: center;
+    }
+    
+    .social-icons {
+        justify-content: center;
+    }
+}
