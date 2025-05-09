@@ -258,22 +258,47 @@ body {
 }
 
 /* =====================
-   CONTACT SECTION
+   CONTACT SECTION - UPDATED
 ===================== */
 .contact-section {
     background-color: #b93d3d;
     padding: 50px 20px;
     width: 100%;
+    display: flex;
+    justify-content: center; /* Center the container */
+}
+
+.contact-section .container {
+    max-width: 1200px; /* Match this to the width of your other sections */
+    width: 100%;
+    margin: 0 auto;
+    padding: 0; /* Remove additional padding */
 }
 
 .contact-title {
     text-align: center;
     margin-bottom: 30px;
+    width: 100%; /* Ensure full width */
+}
+
+.contact-title img {
+    max-width: 100%; /* Make sure images don't overflow */
+    height: auto;
+    margin: 0 auto;
+    display: block;
 }
 
 .contact-intro {
     text-align: center;
     margin-bottom: 50px;
+    width: 100%; /* Ensure full width */
+}
+
+.contact-intro img {
+    max-width: 100%; /* Make sure images don't overflow */
+    height: auto;
+    margin: 0 auto;
+    display: block;
 }
 
 .contact-content {
@@ -281,46 +306,18 @@ body {
     flex-wrap: wrap;
     justify-content: space-between;
     gap: 40px;
+    width: 100%; /* Ensure full width */
 }
 
 .contact-left, .contact-right {
     flex: 1;
     min-width: 280px;
+    max-width: calc(50% - 20px); /* Limit maximum width */
 }
 
-.connect-title {
-    margin-bottom: 20px;
-}
-
-.social-icons {
-    display: flex;
-    gap: 15px;
-}
-
-.social-icon {
-    transition: opacity 0.3s;
-}
-
-.social-icon:hover {
-    opacity: 0.8;
-}
-
-.contact-info {
-    display: grid;
-    gap: 25px;
-}
-
-.contact-button {
-    background: none;
-    border: none;
-    padding: 0;
-    cursor: pointer;
-    display: inline-block;
-    transition: opacity 0.2s;
-}
-
-.contact-button:hover {
-    opacity: 0.9;
+.contact-info img, .connect-title img, .social-icons img {
+    max-width: 100%; /* Make sure images don't overflow */
+    height: auto;
 }
 
 /* =====================
