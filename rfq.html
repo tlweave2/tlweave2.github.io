@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The FEZ - Request for Qualifications</title>
+    <!-- Added Google Fonts for Montserrat -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+  /* Reset and base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.6;
+    overflow-x: hidden;
+    background-color: #f5f5f5;
+}
+
+/* =====================
+   HEADER STYLING
+===================== */
+.header {
+    background-color: #b93d3d;
+    width: 100%;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.nav-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: flex-end;
+    padding: 15px 20px;
+}
+
+.nav-menu {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+}
+
+.nav-item {
+    margin: 0;
+}
+
+.nav-link {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 800;
+    text-transform: uppercase;
+    transition: opacity 0.3s ease;
+}
+
+.nav-link:hover {
+    opacity: 0.8;
+}
+
+.nav-link.active {
+    font-weight: 700;
+    text-decoration: underline;
+}
+
+/* Mobile toggle button (hidden by default) */
+.mobile-toggle {
+    display: none;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+/* =====================
+   IMAGE DISPLAY STYLES
+===================== */
+.image-display {
+    background-color: #f5f5f5;
+    min-height: calc(100vh - 60px);
+    display: flex;
+    flex-direction: column;
+}
+
+.image-header {
+    background-color: white;
+    padding: 1.5rem 2rem;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    text-align: center;
+    flex-shrink: 0;
+}
+
+.page-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #b93d3d;
+    margin-bottom: 0.5rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.launch-notice {
+    color: #666;
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+
+.image-container {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 2rem;
+    min-height: 600px;
+}
+
+.rfq-image {
+    max-width: 800px;
+    max-height: 80vh;
+    width: auto;
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.15);
+    background: white;
+    padding: 1rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.rfq-image:hover {
+    transform: scale(1.02);
+    box-shadow: 0 12px 32px rgba(0,0,0,0.2);
+}
+
+.image-footer {
+    background-color: white;
+    padding: 1.5rem 2rem;
+    border-top: 1px solid #ddd;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+    flex-shrink: 0;
+}
+
+.contact-info {
+    font-size: 0.95rem;
+    color: #666;
+}
+
+.contact-info a {
+    color: #b93d3d;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.contact-info a:hover {
+    text-decoration: underline;
+}
+
+.download-links {
+    display: flex;
+    gap: 1rem;
+}
+
+.download-link {
+    display: inline-block;
+    background-color: #b93d3d;
+    color: white;
+    padding: 0.8rem 1.5rem;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: bold;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    transition: all 0.3s ease;
+}
+
+.download-link:hover {
+    background-color: #a03333;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(185, 61, 61, 0.3);
+}
+
+
+
+/* =====================
+   RESPONSIVE DESIGN
+===================== */
+@media (max-width: 768px) {
+    .nav-menu {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background-color: #b93d3d;
+        flex-direction: column;
+        gap: 0;
+        padding: 20px;
+    }
+
+    .nav-menu.mobile-open {
+        display: flex;
+    }
+
+    .nav-item {
+        text-align: center;
+        padding: 10px 0;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    }
+
+    .mobile-toggle {
+        display: block;
+    }
+
+    .nav-container {
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .page-title {
+        font-size: 1.8rem;
+    }
+
+    .image-header {
+        padding: 1rem;
+    }
+
+    .image-container {
+        padding: 1rem;
+        min-height: 400px;
+    }
+
+    .image-footer {
+        flex-direction: column;
+        text-align: center;
+        padding: 1rem;
+    }
+
+    .contact-info {
+        font-size: 0.85rem;
+        line-height: 1.4;
+    }
+}
+
+@media (max-width: 480px) {
+    .page-title {
+        font-size: 1.4rem;
+    }
+
+    .launch-notice {
+        font-size: 1rem;
+    }
+
+    .image-container {
+        padding: 0.5rem;
+        min-height: 300px;
+    }
+
+    .rfq-image {
+        padding: 0.5rem;
+    }
+
+    .download-link {
+        padding: 0.6rem 1rem;
+        font-size: 0.8rem;
+    }
+}
+    </style>
+</head>
+<body>
+    <!-- Navigation Header -->
+    <header class="header">
+        <nav class="nav-container">
+            <button class="mobile-toggle" onclick="toggleMobileMenu()">☰</button>
+            <ul class="nav-menu" id="navMenu">
+                <li class="nav-item"><a href="/" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="/rfq.html" class="nav-link active">RFQ</a></li>
+                <li class="nav-item"><a href="/#contact-us" class="nav-link">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Content - Image Display -->
+    <main class="image-display">
+        <div class="image-header">
+            <h1 class="page-title">The FEZ - Request for Qualifications</h1>
+        </div>
+        
+        <div class="image-container">
+            <img src="img/rfq-display.png" 
+                 alt="FEZ RFQ Display - ICSC Western" 
+                 class="rfq-image"
+                 loading="lazy">
+        </div>
+
+        <div class="image-footer">
+            <div class="contact-info">
+                <strong>Joseph Viorge-Koide</strong> | Economic Development Analyst | 
+                <a href="tel:209-456-8014">209-456-8014</a> | 
+                <a href="https://manteca.gov" target="_blank">Manteca.gov</a>
+            </div>
+            <div class="download-links">
+                <a href="ICSC Western RFQ QR Display.pdf" target="_blank" class="download-link">
+                    📄 Download PDF Version
+                </a>
+            </div>
+        </div>
+    </main>
+
+    <script>
+        function toggleMobileMenu() {
+            const navMenu = document.getElementById('navMenu');
+            navMenu.classList.toggle('mobile-open');
+        }
+
+        // Close mobile menu when clicking on a link
+        document.querySelectorAll('.nav-link').forEach(link => {
+            link.addEventListener('click', () => {
+                const navMenu = document.getElementById('navMenu');
+                navMenu.classList.remove('mobile-open');
+            });
+        });
+    </script>
+</body>
+</html>
